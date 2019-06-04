@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>001-import.png</file>
+    <file>002-save.png</file>
+    <file>003-package.png</file>
+    <file>004-export.png</file>
+    <file>001-exchange.png</file>
+    <file>002-update-arrow.png</file>
+    <file>001-plus.png</file>
+    <file>004-reload.png</file>
+    <file>007-trash-2.png</file>
+    <file>008-trash.png</file>
+    <file>Imagem1.png</file>
+    <file>search.png</file>
+  </qresource>
+</RCC>
