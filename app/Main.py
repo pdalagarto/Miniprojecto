@@ -121,9 +121,9 @@ class Main():
         self.database()  # mostra a database, com as alteraçoes feitas na janela(treewidget)
 
     def modificar(self):
-        inp = self.main_window_form4.novo_preco_lineEdit.text()
-        try: #utilizador tenta introduzir um float, caso de erro aparece a menssagem "O valor é invalido"
-            preco = float(inp)
+        inp = self.main_window_form4.novo_preco_lineEdit.text() #a ediçao do preco é contida na variavel inp
+        try: #utilizador tenta introduzir um float, caso de erro aparece uma menssagem "O valor é invalido"
+            preco = float(inp) #variavel tranformada para um float
         except ValueError:
             msg = QMessageBox() #Introduz na variavel msg a janela de texto(widget do pyqt5)
             msg.setWindowTitle("Erro!") #Titulo da janela de texto
@@ -134,6 +134,7 @@ class Main():
         get_modificar = self.main_window_form.treeWidget.selectedItems()  # seleção do artigo que o utilizador pretende
         if get_modificar: #se o artigo for selecionado
             artigo_selecionado = get_modificar[0].text(0) #artigo selecionado com o texto que a seleçao se identifica
+            print(artigo_selecionado)
             if self.main_window_form4.novo_nome_lineEdit.text() == "": #na janela modificar, se a linha onde se introduz o nome estiver em branco
                 msg = QMessageBox() #Introduz na variavel msg a janela de texto(widget do pyqt5)
                 msg.setWindowTitle("Erro!")#Titulo da janela de texto
@@ -276,6 +277,7 @@ class Main():
         self.main_window_form.treeWidget.clear() #limpa a janela que mostra a base de dados
 
         for i in artigo: #para i em artigos
+            print(i)
             item = QTreeWidgetItem([
                 str(i.id),
                 i.nome,
