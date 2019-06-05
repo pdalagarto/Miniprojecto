@@ -5,15 +5,14 @@ from ui.projecto4 import Ui_MainWindow2 #importa tudo que esta em ui.adicionar.p
 from ui.projecto4 import Ui_MainWindow4 #importa tudo que esta em ui.modificar.py
 from ui.projecto4 import Ui_MainWindow5 #importa tudo que esta em ui.pesquisar.py
 from ui.projecto4 import Ui_MainWindow6 #importa tudo que esta em ui.mostrar_imagem.py
-import csv
-from app.file_csv import import_csv
-import os
+import csv #importa ficheiros em csv
+from app.file_csv import import_csv #importa a class import_csv do file_csv.py
 from app import db #importa a base de dados
 from app.api import Api #importa a class Api de app.api
 
 
 class Main():
-    filter = None
+    filter = None #inicia a variavel com o objecto vazio
 
     def __init__(self):
         self.g = Api()  # Vai buscar a class API do ficheiro api.py
@@ -44,8 +43,8 @@ class Main():
         self.main_window_form6 = Ui_MainWindow6()
         self.main_window_form6.setup6(self.main_window6)
 
-        self.bindings()
-        self.database()
+        self.bindings() #chamar a funçao bindings a class , para que os butoes consigam "correr"
+        self.database() #chamar a funcao database, para que mostra a base de dados no inicio
 
     def bindings(self): #Funçao onde se conectao todos os botoes
         self.main_window_form.add_pushButton_2.clicked.connect(self.show_jn2)  # mostra a janela "Adicionar"
@@ -78,14 +77,14 @@ class Main():
         inp = self.main_window_form2.preco_lineEdit.text()  # guarda o input de preço em inp
         try:
             preco = float(inp)  # verifica se preço é um float
-        except ValueError:  # Se nao for, aparece uma janela de "Erro!", e deixa repetir o processo
+        except ValueError:  # Se nao for, aparece uma janela de "Erro!", e repete o processo
             msg = QMessageBox()
             msg.setWindowTitle("Erro!")
             msg.setText("O valor é invalido!")
             msg.exec_()
             return
 
-        if self.main_window_form2.nome_lineEdit.text() == "":
+        if self.main_window_form2.nome_lineEdit.text() == "": #se o nome estiver em branco, mostra uma mensagem, e repete o processo
             msg = QMessageBox()
             msg.setWindowTitle("Erro!")
             msg.setText("Tem de introduzir um Nome")
@@ -109,8 +108,8 @@ class Main():
                           preco=preco,
                           imagem=self.main_window_form2.imagem_lineEdit.text())  # funçao que corre na "api.py" "def add_artigo"
         self.hide2()
-        self.main_window_form.treeWidget.clear()
-        self.database()
+        self.main_window_form.treeWidget.clear() #limpa a demostraçao da base de dados na treewidget
+        self.database() #insera de novo com as alteraçoes feitas pelo utilizador
 
     def remover(self):
         get_Selected = self.main_window_form.treeWidget.selectedItems()  # seleção do artigo que o utilizador pretende
@@ -176,7 +175,6 @@ class Main():
             # "filenames[0]"(ficheiros selecionados)
             self.main_window_form4.novo_imagem_lineEdit.setText(filenames[0]) #repete-se a mesma coisa para a janela Modificar
 
-
     def pesquisar(self):
         self.main_window_form5.min_doubleSpinBox.setDisabled(True) #Desativar o preco minimo
         self.main_window_form5.max_doubleSpinBox.setDisabled(True) #Desativar o preço maximo
@@ -213,6 +211,7 @@ class Main():
         else: #se nao estiver com o visto
             self.main_window_form5.min_doubleSpinBox.setEnabled(False) #desativa
             self.main_window_form5.max_doubleSpinBox.setEnabled(False)
+
     def ativa_data(self): #é igual a função do ativa_precos so que para a data
         if self.main_window_form5.data_checkBox.isChecked():
             self.main_window_form5.min_dateTimeEdit.setEnabled(True)
@@ -286,8 +285,6 @@ class Main():
                 str(i.imagem)
             ])
             self.main_window_form.treeWidget.addTopLevelItem(item) #adiciona a janela de demostração os items recolhidos em artigos
-
-
 
     def clear_database(self): #limpa a janela de visualizaçao da database e insere-a de novo
         artigo = db.session.query(db.Artigo).all()
@@ -371,7 +368,7 @@ class Main():
             pixmap = pixmap.scaled(400, 400) #redimensiona a foto para 400*400 que é o tamanho da "label"
             self.main_window_form6.imagem_label.setPixmap(pixmap)  # apresenta a imagem na label(widget utilizado no qtdesigner)
 
-        self.main_window6.show()
+        self.main_window6.show() #mostra a janela do artigo selecionado
 
     def hide2(self):
         self.main_window2.hide()  # esconde a janela
