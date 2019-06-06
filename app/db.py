@@ -9,7 +9,7 @@ engine = create_engine(conn)
 base = declarative_base()
 
 class Artigo(base):
-    __tablename__ = "Artigo" #nome da base de dados
+    __tablename__ = "Artigo" #nome da tabela
 
     id = Column(Integer, primary_key=True)  # id como inteiro e uma chave primaria, ou seja, a base de dados é que ira modificar o id automaticamente
     nome = Column(String(120))  #variavel em string

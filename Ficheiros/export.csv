@@ -1,1 +1,8 @@
-nome,marca,preco,data_scrap,imagemRefrigerante,Coca-Cola,1.0,2019-05-23 10:59:42.745061,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/cocacola.jpgRefrigerante,Ice Tea,1.0,2019-05-23 11:00:02.320935,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/ice tea.jpgRefrigerante,Guarana,1.0,2019-05-23 11:00:19.368438,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/guarana.jpgRefrigerante,Compal,1.0,2019-05-23 11:00:30.698351,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/compal.jpgRefrigerante,7up,1.0,2019-05-23 11:00:41.533116,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/7up.jpgAgua,Luso,0.5,2019-05-23 11:01:13.300353,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/agua_luso.jpg
+nome,marca,preco,imagem
+Refrigerante,Coca-Cola,1.0,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/cocacola.jpg
+Refrigerante,Ice Tea,1.0,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/ice tea.jpg
+Refrigerante,Guarana,1.0,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/guarana.jpg
+Refrigerante,Compal,1.0,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/compal.jpg
+Refrigerante,7up,1.0,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/7up.jpg
+Agua,Luso,0.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/agua_luso.jpg
+Agua,Penacova,0.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/agua_luso.jpg

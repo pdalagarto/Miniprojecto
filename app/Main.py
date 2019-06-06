@@ -67,11 +67,11 @@ class Main():
         self.main_window_form6.sair_pushbutton.clicked.connect(self.hide6)
         self.main_window_form.treeWidget.doubleClicked.connect(self.show_jn6)
         self.main_window_form5.pesquisar_pushButton.clicked.connect(self.button_pesquisar)
-        self.main_window_form.reset_pushButton.clicked.connect(self.clear_database) #quando se clicla no botao reset conecta-se a funçao "def clear_database"
+        self.main_window_form.reset_pushButton.clicked.connect(self.update_database) #quando se clicla no botao reset conecta-se a funçao "def clear_database"
         self.main_window_form5.preco_checkBox.clicked.connect(self.ativa_precos)
         self.main_window_form5.data_checkBox.clicked.connect(self.ativa_data)
         self.main_window_form.exportar_pushButton.clicked.connect(self.extrair_csv)
-        self.main_window_form.importar_pushButton.clicked.connect(import_csv)
+        self.main_window_form.importar_pushButton.clicked.connect(self.import_csv)
 
     def guardar(self):
         inp = self.main_window_form2.preco_lineEdit.text()  # guarda o input de preço em inp
@@ -109,7 +109,7 @@ class Main():
                           imagem=self.main_window_form2.imagem_lineEdit.text())  # funçao que corre na "api.py" "def add_artigo"
         self.hide2()
         self.main_window_form.treeWidget.clear() #limpa a demostraçao da base de dados na treewidget
-        self.database() #insera de novo com as alteraçoes feitas pelo utilizador
+        self.update_database() #insera de novo com as alteraçoes feitas pelo utilizador
 
     def remover(self):
         get_Selected = self.main_window_form.treeWidget.selectedItems()  # seleção do artigo que o utilizador pretende
@@ -118,7 +118,7 @@ class Main():
             self.g.remove_artigo(remove)  # remove o artigo
 
         self.main_window_form.treeWidget.clear()  # limpa a janela(treewidget) que mostra a database
-        self.database()  # mostra a database, com as alteraçoes feitas na janela(treewidget)
+        self.update_database() # mostra a database, com as alteraçoes feitas na janela(treewidget)
 
     def modificar(self):
         inp = self.main_window_form4.novo_preco_lineEdit.text() #a ediçao do preco é contida na variavel inp
@@ -134,7 +134,7 @@ class Main():
         get_modificar = self.main_window_form.treeWidget.selectedItems()  # seleção do artigo que o utilizador pretende
         if get_modificar: #se o artigo for selecionado
             artigo_selecionado = get_modificar[0].text(0) #artigo selecionado com o texto que a seleçao se identifica
-            print(artigo_selecionado)
+
             if self.main_window_form4.novo_nome_lineEdit.text() == "": #na janela modificar, se a linha onde se introduz o nome estiver em branco
                 msg = QMessageBox() #Introduz na variavel msg a janela de texto(widget do pyqt5)
                 msg.setWindowTitle("Erro!")#Titulo da janela de texto
@@ -162,7 +162,7 @@ class Main():
 
         self.hide4() #inicia a def hide4, que faz esconder a janela de modificar
         self.main_window_form.treeWidget.clear() #limpa a janela de apresentação
-        self.database() #introduz a funçao def database, para introduzir de novo a base de dados com as alterações
+        self.update_database() #introduz a funçao def resest_database, para introduzir de novo a base de dados com as alterações
 
     def explorer(self):
         file = QFileDialog() #class que promove que os utilizadores permitam a selecao de ficheiros ou diretório
@@ -172,8 +172,7 @@ class Main():
             filenames = file.selectedFiles() #os ficheiros selecionados(o diretorio), terao como variavel "filenames"
 
             self.main_window_form2.imagem_lineEdit.setText(filenames[0]) #para a linha de ediçao da janela
-            # main_windows_form2(janela de adicionar), com o nome imagem_lineedit, insere o texto da variavel
-            # "filenames[0]"(ficheiros selecionados)
+            # main_windows_form2(janela de adicionar), com o nome imagem_lineedit, insere o texto da variavel filenames
             self.main_window_form4.novo_imagem_lineEdit.setText(filenames[0]) #repete-se a mesma coisa para a janela Modificar
 
     def pesquisar(self):
@@ -288,7 +287,7 @@ class Main():
             ])
             self.main_window_form.treeWidget.addTopLevelItem(item) #adiciona a janela de demostração os items recolhidos em artigos
 
-    def clear_database(self): #limpa a janela de visualizaçao da database e insere-a de novo
+    def update_database(self): #limpa a janela de visualizaçao da database e insere-a de novo
         artigo = db.session.query(db.Artigo).all()
         self.main_window_form.treeWidget.clear()
 
@@ -328,7 +327,7 @@ class Main():
         file = './Ficheiros/export.csv'
 
         with open(file, 'w') as csvfile:
-            outcsv = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            outcsv = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
 
             cabecalho = db.Artigo.__table__.columns.keys()
 
@@ -341,6 +340,10 @@ class Main():
         msg.setWindowTitle("Verificação!")
         msg.setText("O seu ficheiro foi exportado")
         msg.exec_()
+
+    def import_csv(self):
+        import_csv()
+        self.update_database()
 
     def show_jn2(self):
         self.main_window2.show()  # mostra a janela
@@ -356,7 +359,7 @@ class Main():
         get_Selected = self.main_window_form.treeWidget.selectedItems()  # seleção do artigo que o utilizador pretende
         if get_Selected:  # se selecionada
             id = get_Selected[0].text(0)  # regista id da seleçao e guarda na variavel id
-            artigo = db.session.query(db.Artigo).filter_by(id=id).first()  #
+            artigo = db.session.query(db.Artigo).filter_by(id=id).first()
 
             self.main_window_form6.id_lineEdit.setText(str(artigo.id))  # apresenta o id do artigo selecionado é convertido em str
             # para visualizar, porque verdadeiramente o id é um inteiro como se pode ver na pasta api.py
