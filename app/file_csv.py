@@ -15,7 +15,7 @@ def import_csv():
             next(reader) #passa o cabeçalho
             for i in reader:
                 artigo = Artigo(nome=i[0],marca=i[1],preco=float(i[2]),imagem=i[3]) #instacia artigo
-                session.add(artigo)
+                session.add(artigo)#adiciona a base de dados
 
             session.commit() #grava na base de dados
 

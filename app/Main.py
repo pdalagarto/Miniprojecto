@@ -108,17 +108,14 @@ class Main():
                           preco=preco,
                           imagem=self.main_window_form2.imagem_lineEdit.text())  # funçao que corre na "api.py" "def add_artigo"
         self.hide2()
-        self.main_window_form.treeWidget.clear() #limpa a demostraçao da base de dados na treewidget
-        self.update_database() #insera de novo com as alteraçoes feitas pelo utilizador
+        self.update_database() #insere-a de novo com as alteraçoes feitas pelo utilizador
 
     def remover(self):
         get_Selected = self.main_window_form.treeWidget.selectedItems()  # seleção do artigo que o utilizador pretende
         if get_Selected:  # se selecionada
             remove = get_Selected[0].text(0)  # vai buscar o artigo selecionado
             self.g.remove_artigo(remove)  # remove o artigo
-
-        self.main_window_form.treeWidget.clear()  # limpa a janela(treewidget) que mostra a database
-        self.update_database() # mostra a database, com as alteraçoes feitas na janela(treewidget)
+        self.update_database() #limpa, e insere a base de dados na treewidget
 
     def modificar(self):
         inp = self.main_window_form4.novo_preco_lineEdit.text() #a ediçao do preco é contida na variavel inp
@@ -134,6 +131,8 @@ class Main():
         get_modificar = self.main_window_form.treeWidget.selectedItems()  # seleção do artigo que o utilizador pretende
         if get_modificar: #se o artigo for selecionado
             artigo_selecionado = get_modificar[0].text(0) #artigo selecionado com o texto que a seleçao se identifica
+
+
 
             if self.main_window_form4.novo_nome_lineEdit.text() == "": #na janela modificar, se a linha onde se introduz o nome estiver em branco
                 msg = QMessageBox() #Introduz na variavel msg a janela de texto(widget do pyqt5)
@@ -154,14 +153,14 @@ class Main():
                 msg.exec_()
                 return
 
+
             self.g.modificar_artigo(artigo_selecionado, novo_nome=self.main_window_form4.novo_nome_lineEdit.text(),
                                     novo_marca=self.main_window_form4.novo_marca_lineEdit.text(),
                                     novo_preco=preco,
                                     novo_imagem=self.main_window_form4.novo_imagem_lineEdit.text())
             #inicia a funçao que esta na api.Api() def modificar_artigo, em que, o artigo selecionado
 
-        self.hide4() #inicia a def hide4, que faz esconder a janela de modificar
-        self.main_window_form.treeWidget.clear() #limpa a janela de apresentação
+        self.hide4() #inicia a def hide4, que faz esconder a janela depois de modificar
         self.update_database() #introduz a funçao def resest_database, para introduzir de novo a base de dados com as alterações
 
     def explorer(self):
@@ -276,7 +275,6 @@ class Main():
         self.main_window_form.treeWidget.clear() #limpa a janela que mostra a base de dados
 
         for i in artigo: #para i em artigos
-            print(i)
             item = QTreeWidgetItem([
                 str(i.id),
                 i.nome,
@@ -348,7 +346,17 @@ class Main():
     def show_jn2(self):
         self.main_window2.show()  # mostra a janela
 
-    def show_jn4(self):
+    def show_jn4(self):#imprime os campos na janela de modificar, o artigo selecionado
+        get_Selected = self.main_window_form.treeWidget.selectedItems()
+        if get_Selected:
+            id = get_Selected[0].text(0)
+            artigo = db.session.query(db.Artigo).filter_by(id=id).first()
+
+            self.main_window_form4.novo_nome_lineEdit.setText(artigo.nome)
+            self.main_window_form4.novo_marca_lineEdit.setText(artigo.marca)
+            self.main_window_form4.novo_preco_lineEdit.setText(str(artigo.preco))
+            self.main_window_form4.novo_imagem_lineEdit.setText(str(artigo.imagem))
+
         self.main_window4.show()  # mostra a janela
 
     def show_jn5(self):
