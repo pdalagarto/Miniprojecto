@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/Main.py" line="56" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/app/Main.py" line="55" mnemonic="2" />
     <bookmark url="file://$PROJECT_DIR$/app/file_csv.py" line="17" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec344454-2a0c-41a2-aa45-82e7736f28fd" name="Default Changelist" comment="comentario">
+    <list default="true" id="ec344454-2a0c-41a2-aa45-82e7736f28fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/file_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/file_csv.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,45 +23,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1671">
-              <caret line="110" column="39" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
+            <state relative-caret-position="138">
+              <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
               <folding>
                 <element signature="e#0#152#0" expanded="true" />
-                <element signature="e#9413#10128#0" />
-                <element signature="e#10163#12175#0" />
-                <element signature="e#12213#12689#0" />
-                <element signature="e#12778#13122#0" />
-                <element signature="e#13164#14753#0" />
-                <element signature="e#14787#16932#0" />
-                <element signature="e#17036#17457#0" />
-                <element signature="e#17494#19545#0" />
-                <element signature="e#19581#19624#0" />
-                <element signature="e#19658#19701#0" />
-                <element signature="e#19521#20143#0" />
-                <element signature="e#19812#19893#0" />
-                <element signature="e#19927#21354#0" />
-                <element signature="e#21385#21429#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Ficheiros/export.csv">
+        <entry file="file://$PROJECT_DIR$/ui/projecto4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="570">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+              <folding>
+                <element signature="n#!!doc" />
+                <element signature="e#197#223#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/db.py">
+        <entry file="file://$PROJECT_DIR$/MiniProjeto.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="95">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="25" />
               <folding>
-                <element signature="e#0#78#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
@@ -168,21 +157,6 @@
             <path>
               <item name="MiniProjecto" type="b2602c69:ProjectViewProjectNode" />
               <item name="MiniProjecto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MiniProjecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MiniProjecto" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MiniProjecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MiniProjecto" type="462c0819:PsiDirectoryNode" />
-              <item name="Ficheiros" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MiniProjecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MiniProjecto" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -418,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559838387619</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="comentario">
+      <created>1559896149968</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559896149968</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -431,10 +412,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.08956797" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.23101953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.500821" side_tool="true" weight="0.19088937" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.20594713" />
@@ -445,7 +426,7 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32929516" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.4989154" visible="true" weight="0.20887446" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.4989154" visible="true" weight="0.20814978" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.32929516" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.28744492" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -587,16 +568,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/export.csv" />
-    <entry file="file://$PROJECT_DIR$/ui/projecto4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-466">
-          <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
-          <folding>
-            <element signature="e#197#223#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/io/parsers.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -617,13 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MiniProjeto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -651,6 +615,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -661,33 +632,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api.py">
+    <entry file="file://$PROJECT_DIR$/Ficheiros/export1.csv" />
+    <entry file="file://$PROJECT_DIR$/app/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="138">
+          <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#152#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Main.py">
+    <entry file="file://$PROJECT_DIR$/ui/projecto4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1671">
-          <caret line="110" column="39" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
+        <state relative-caret-position="570">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding>
-            <element signature="e#0#152#0" expanded="true" />
-            <element signature="e#9413#10128#0" />
-            <element signature="e#10163#12175#0" />
-            <element signature="e#12213#12689#0" />
-            <element signature="e#12778#13122#0" />
-            <element signature="e#13164#14753#0" />
-            <element signature="e#14787#16932#0" />
-            <element signature="e#17036#17457#0" />
-            <element signature="e#17494#19545#0" />
-            <element signature="e#19581#19624#0" />
-            <element signature="e#19658#19701#0" />
-            <element signature="e#19521#20143#0" />
-            <element signature="e#19812#19893#0" />
-            <element signature="e#19927#21354#0" />
-            <element signature="e#21385#21429#0" />
+            <element signature="n#!!doc" />
+            <element signature="e#197#223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniProjeto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

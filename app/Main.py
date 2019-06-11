@@ -48,8 +48,7 @@ class Main():
 
     def bindings(self): #Funçao onde se conectao todos os botoes
         self.main_window_form.add_pushButton_2.clicked.connect(self.show_jn2)  # mostra a janela "Adicionar"
-        self.main_window_form2.guardar_pushButton.clicked.connect(
-            self.guardar)  # quando carrega em guardar corre a funçao "def guardar"
+        self.main_window_form2.guardar_pushButton.clicked.connect(self.guardar)  # quando carrega em guardar corre a funçao "def guardar"
         self.main_window_form2.cancelar_pushButton.clicked.connect(
             self.hide2)  # quando clica em cancelar corre a funcao "def hide2" que faz esconder a janela
         self.main_window_form.remove_pushButton_4.clicked.connect(
@@ -344,7 +343,7 @@ class Main():
         self.update_database()
 
     def show_jn2(self):
-        self.main_window2.show()  # mostra a janela
+        self.main_window2.show()  # mostrar a janela Adicionar
 
     def show_jn4(self):#imprime os campos na janela de modificar, o artigo selecionado
         get_Selected = self.main_window_form.treeWidget.selectedItems()
