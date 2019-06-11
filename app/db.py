@@ -5,7 +5,7 @@ from datetime import datetime #importar a data e tempo
 
 
 conn = "sqlite:///dbservidor.sqlite"  # nome da base de dados
-engine = create_engine(conn)
+engine = create_engine(conn) #estabelecer uma conexão
 base = declarative_base()
 
 class Artigo(base):
@@ -23,4 +23,4 @@ class Artigo(base):
 
 base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
-session = Session()
+session = Session() #inicia a sessao
