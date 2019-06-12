@@ -7,6 +7,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ec344454-2a0c-41a2-aa45-82e7736f28fd" name="Default Changelist" comment="comentario">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ficheiros/Exemplo_csv.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ficheiros/export.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ficheiros/import.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ficheiros/import_exemplo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Ficheiros/import_exemplo.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbservidor.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/dbservidor.sqlite" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
+            <state relative-caret-position="4503">
+              <caret line="247" column="55" selection-start-line="247" selection-start-column="55" selection-end-line="247" selection-end-column="55" />
               <folding>
                 <element signature="e#0#152#0" expanded="true" />
               </folding>
@@ -32,11 +36,32 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/file_csv.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Ficheiros/import_exemplo.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MiniProjeto.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="114">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -76,6 +101,7 @@
       <find>reset_database()</find>
       <find>reset_database</find>
       <find>print</find>
+      <find>;</find>
     </findStrings>
     <replaceStrings>
       <replace>Imagens/</replace>
@@ -90,6 +116,7 @@
       <replace>print(</replace>
       <replace>update_database()</replace>
       <replace>update_database</replace>
+      <replace>,</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -121,13 +148,15 @@
         <option value="$PROJECT_DIR$/MiniProjeto.py" />
         <option value="$PROJECT_DIR$/app/db.py" />
         <option value="$PROJECT_DIR$/Ficheiros/export.csv" />
-        <option value="$PROJECT_DIR$/app/file_csv.py" />
         <option value="$PROJECT_DIR$/app/Main.py" />
+        <option value="$PROJECT_DIR$/app/file_csv.py" />
+        <option value="$PROJECT_DIR$/Ficheiros/import_exemplo.csv" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="712" />
+    <option name="y" value="-12" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -137,7 +166,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,12 +176,18 @@
             <path>
               <item name="MiniProjecto" type="b2602c69:ProjectViewProjectNode" />
               <item name="MiniProjecto" type="462c0819:PsiDirectoryNode" />
-              <item name="Imagens" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MiniProjecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MiniProjecto" type="462c0819:PsiDirectoryNode" />
+              <item name="Ficheiros" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,7 +439,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560243567478</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="comentario">
+      <created>1560243843206</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560243843206</updated>
+    </task>
+    <task id="LOCAL-00013" summary="comentario">
+      <created>1560345187121</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1560345187121</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -418,23 +466,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.23101953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917898" visible="true" weight="0.18282403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.500821" side_tool="true" weight="0.19088937" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.20594713" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.20562771" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5010846" side_tool="true" weight="0.2610132" />
       <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.4989154" weight="0.2599119" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.4989154" weight="0.25974026" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32929516" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.4989154" visible="true" weight="0.20814978" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.4989154" visible="true" weight="0.20454545" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.32929516" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.28744492" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.28679654" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -601,16 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/file_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ficheiros/export.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -636,16 +673,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ficheiros/export1.csv" />
-    <entry file="file://$PROJECT_DIR$/app/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui/projecto4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -666,13 +693,40 @@
     <entry file="file://$PROJECT_DIR$/Imagens/Imagem1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4503">
+          <caret line="247" column="55" selection-start-line="247" selection-start-column="55" selection-end-line="247" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MiniProjeto.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="114">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/file_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="81" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ficheiros/import_exemplo.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
         </state>
       </provider>
     </entry>

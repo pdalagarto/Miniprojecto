@@ -1,26 +1,26 @@
-"nome,marca,preco,imagem"
-"Refrigerante,Coca-Cola,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/cocacola.jpg"
-"Refrigerante,Ice Tea,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/ice tea.jpg"
-"Refrigerante,Guarana,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/guarana.jpg"
-"Refrigerante,Compal,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/compal.jpg"
-"Refrigerante,7up,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/7up.jpg"
-"Agua,Luso,0.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/agua_luso.jpg"
-"Agua,Penacova,0.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/penacova.jpg"
-"Cerveja,Super Bock,1.4,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/super-bock.jpg"
-"Cerveja,Sagres,1.0,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/sagres.jpg"
-"Cerveja,Carlsberg,1.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/carlsberg.jpg"
-"Cerveja,Heineken,1.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/heineken.jpg"
-"Cerveja,Franziskaner,2.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/franziskaner.jpg"
-"Agua,Pedras-Limão,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/agua_pedras_limao.jpg"
-"Agua,Pedras,1.0,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/agua_pedras.jpg"
-"Whisky,Jack daniels,20.99,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/jack daniels.jpg"
-"Whisky,Johnnie walker,36.9,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/johnnie walker.jpg"
-"Whisky,Cutty sark,11.99,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/cutty sark.jpg"
-"Sidra,Somersby,1.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/somersby.jpg"
-"Sidra,Strongbow,2.0,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/strongbow.jpg"
-"Sidra,Bandida do pomar,2.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/bandida do pomar.jpg"
-"Vinho,Contemporal Tinto Bairrada,2.49,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/Contemporal Tinto Bairrada.jpg"
-"Vinho,Esteva Tinto Douro,2.79,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/Esteva Tinto Douro.jpg"
-"Vinho,Vidigueira ,4.85,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/Vidigueira Tinto.jpg"
-"Vinho,Casal garcia,3.29,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/casal garcia.png"
-"Vinho,Cacho fresco,1.79,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/cacho fresco.jpg"
+nome,marca,preco,imagem
+Refrigerante,Coca-Cola,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/cocacola.jpg
+Refrigerante,Ice Tea,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/ice tea.jpg
+Refrigerante,Guarana,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/guarana.jpg
+Refrigerante,Compal,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/compal.jpg
+Refrigerante,7up,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/7up.jpg
+Agua,Luso,0.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/agua_luso.jpg
+Agua,Penacova,0.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/penacova.jpg
+Cerveja,Super Bock,1.4,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/super-bock.jpg
+Cerveja,Sagres,1.0,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/sagres.jpg
+Cerveja,Carlsberg,1.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/carlsberg.jpg
+Cerveja,Heineken,1.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/heineken.jpg
+Cerveja,Franziskaner,2.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/franziskaner.jpg
+Agua,Pedras-Limï¿½,1.2,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/agua_pedras_limao.jpg
+Agua,Pedras,1.0,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/agua_pedras.jpg
+Whisky,Jack daniels,20.99,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/jack daniels.jpg
+Whisky,Johnnie walker,36.9,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/johnnie walker.jpg
+Whisky,Cutty sark,11.99,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/cutty sark.jpg
+Sidra,Somersby,1.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/somersby.jpg
+Sidra,Strongbow,2.0,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/strongbow.jpg
+Sidra,Bandida do pomar,2.5,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/bandida do pomar.jpg
+Vinho,Contemporal Tinto Bairrada,2.49,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/Contemporal Tinto Bairrada.jpg
+Vinho,Esteva Tinto Douro,2.79,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/Esteva Tinto Douro.jpg
+Vinho,Vidigueira ,4.85,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/Vidigueira Tinto.jpg
+Vinho,Casal garcia,3.29,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/casal garcia.png
+Vinho,Cacho fresco,1.79,C:/Users/PLagarto/PycharmProjects/MiniProjecto/Imagens/cacho fresco.jpg
